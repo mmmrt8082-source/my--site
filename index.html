@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohamed Ashraf</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="enter-screen">
+<h1>CLICK TO ENTER</h1>
+</div>
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="particles"></div>
+
+<div class="card">
+
+<img src="cover.jpg.webp" class="cover">
+
+<div class="profile">
+<img src="profile.jpeg">
+</div>
+
+<h1>Mohamed Ashraf</h1>
+
+<div class="bio">
+Cyber Security | SOC Analyst
+</div>
+
+<div class="skills">
+
+<span>Python</span>
+<span>Linux</span>
+<span>Networking</span>
+<span>SOC</span>
+<span>Wireshark</span>
+<span>Nmap</span>
+<span>javescript </span>
+
+</div>
+
+<div class="socials">
+
+<a href="https://youtube.com /@محمد اشرف المرلى">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://discord.com /@mohamedashraf3254">
+<i class="fab fa-discord"></i>
+</a>
+
+<a href="https://tiktok.com /@mohamed_zaki89">
+<i class="fab fa-tiktok"></i>
+</a>
+
+<a href="https://facebook.com /@mohamed Ashraf">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://github.com /@mohamedzaki2005
+ ">
+<i class="fab fa-github"></i>
+</a>
+
+
+</div>
+
+<a class="cv-btn" href="Mohamed_Asharf_Zaki_CV.pdf">
+Download CV
+
+</a>
+
+<div class="views">
+👁 <span id="counter"></span>
+</div>
+
+</div>
+
+<script>
+let views = localStorage.getItem('views') || 0;
+views++;
+localStorage.setItem('views', views);
+document.getElementById('counter').innerText = views;
+
+const enter = document.getElementById('enter-screen');
+const music = document.getElementById('music');
+
+enter.onclick = () => {
+music.play();
+enter.style.display = "none";
+};
+</script>
+
+</body>
+</html>
